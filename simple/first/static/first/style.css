@@ -1,0 +1,9 @@
+h1 {
+	color:red;
+}
+h2 {
+	color:pink;
+}
+body {
+	background: white url("images/django-allauth.png") no-repeat right bottom;
+}

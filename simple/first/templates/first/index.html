@@ -1,0 +1,12 @@
+
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'first/style.css' %}">
+<h1>This is index page, will show all entries</h1>
+
+
+{% if data %}
+<h1>Question id:  <span>{{ data.id }}</span></h1>
+<h2>Question title: {{ data.question_title }} </h2>
+<h2>Question: {{ data.question }}</h2>
+
+{% endif %}

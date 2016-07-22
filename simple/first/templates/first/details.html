@@ -1,0 +1,5 @@
+<h1>This is detail page will show only question title</h1>
+{% for s in data %}
+
+<h2> <a href="{% url 'first:index' s.id %}">{{ s.question_title }}</a></h2>
+{% endfor %}

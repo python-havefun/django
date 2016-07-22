@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>Search</title>
+</head>
+<body>
+{% if error %}
+<p style="color:red;"> your data is not in db</p>
+{% elif empty %}
+<p style="color:red;"> search box is empty</p>
+{% endif %}
+    <form action="/first/search/" method="get">
+        <input type="text" name="q" placeholder="enter your data">
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>
